@@ -1,0 +1,54 @@
+
+li:nth-child(2n+2){
+    color: red;
+}
+h1{
+    text-align: center;
+    /* text-transform: uppercase; */
+    color: #ff5555;
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+h1::after,h1::before{
+    position: absolute;
+    content: '';
+    background: #ff5555;
+    width: 100px;
+    height: 5px;
+    left: 50%;
+    margin-left: -50px;
+}
+h1::after{
+    bottom: 0;
+}
+h1::before{
+    top: 0;
+}
+p::first-letter{
+    color: red;
+    font-size: 50px;
+}
+h2::before{
+    content: '(IT Center) ';
+}
+h2::after{
+    content: ' (p2c)';
+}
+.flag{
+    background: rgb(0, 128, 0);
+    width: 500px;
+    height: 250px;
+    position: relative;
+}
+.flag::before{
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}

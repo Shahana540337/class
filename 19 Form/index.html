@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class 19</title>
+
+    <style>
+        label{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        input,select,textarea{
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        select{
+            width: 94%;
+        }
+        textarea{
+            min-height: 100px;
+        }
+        input[type="submit"]{
+            background: aqua;
+            border: 1px solid aqua;
+            width: 200px;
+            font: 18px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        input[type="submit"]:hover{
+            background: #000;
+            border: 1px solid #000;
+            color: #fff;
+        }
+        .search_form{
+            width: 100%;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        .search_form input{
+            width: 60%;
+            float: left;
+        }
+        .search_form input[type="submit"]{
+            width: 35%;
+            float: left;
+            /* padding: 7px 3%; */
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Form</h1>
+    
+    <form action="">
+        <label>Your Name :</label>
+        <input type="text" placeholder="Enter Your Name">
+        <label>Your Email :</label>
+        <input type="email" placeholder="Enter Your Email Address">
+        <label>Your Interest : </label>
+        <select name="interest" id="">
+            <option value="html">HTML</option>
+            <option value="css">Css</option>
+            <option value="jquery">jQuery</option>
+            <option value="bootstrap">Bootstrap</option>
+        </select>
+        <label>Your Massage :</label>
+        <textarea name="" placeholder="Enter Your Massage"></textarea>
+        <input type="submit" value="Contact Us">
+    </form>
+
+    <div class="search_form">
+        <form action="">
+            <input type="text" value="Search Here">
+            <input type="submit" value="Search">
+        </form>
+    </div>
+
+
+</body>
+</html>
+

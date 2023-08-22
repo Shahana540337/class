@@ -1,0 +1,28 @@
+#main{
+    display: grid;
+    /* grid-template-columns: 30% 30% 40%; */
+    grid-template-columns:  1fr 1fr 1fr;
+    /* grid-column-gap: 5px;
+    grid-row-gap: 5px; */
+    grid-gap: 5px;
+    /* grid-auto-rows: minmax(100px,auto); */
+    /* justify-items: start;
+    align-items: start; */
+}
+#main .child{
+    background: #c23616;
+    padding: 1rem;
+    color: #fff;
+}
+#main .child:nth-child(odd){
+    background: #192a56;
+}
+#main .child:nth-child(1){
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+#main .child:nth-child(7){
+    background: green;
+    grid-row: 3/3;
+    grid-column: 2/3;
+}
